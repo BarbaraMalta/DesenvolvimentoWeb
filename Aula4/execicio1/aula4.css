@@ -1,0 +1,68 @@
+.noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+body {
+    background-color: rgb(230, 209, 170);
+}
+span {
+    background-color: lightblue;
+    font-size: 25px;
+    font-weight: 900;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+}
+h5 {
+    margin: 0;
+    padding: 0;
+}
+h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+#tamanho-relativo {
+    min-height: 5rem;
+    background-color: rgb(228, 120, 212);
+    width: 20vw;
+    font-size: 10vw;
+}
+#tamanho-fixo {
+    background-color: pink;
+    width: 130px;
+    height: 25px;
+    font-size: 20px;
+}
+img {
+    width: 500px;
+
+}
+video {
+    width: 500px;
+}
+.midias {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
