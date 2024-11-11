@@ -53,7 +53,9 @@ console.log("Isso imprime antes");
 
 const verificaSenha =() => {
     const entrada = document.getElementById('senha').value;
-    const hash_senha = '202447d44ce12531f7207cb33b6bf7';
+    const hash_senha = '202447d5d44ce12531f7207cb33b6bf7'
+
+
     if (hash_senha === hex_md5(entrada)){
         sessionStorage.setItem('logado', 'sim');
         alert("Logado");
@@ -61,4 +63,5 @@ const verificaSenha =() => {
         alert("Senha incorreta.");
     }
 }
-document.getElementById('logout').onCick = () => {sessionStorage.removeItem("Logado"); alert("Saiu")}
+
+document.getElementById('logout').onclick = () => {sessionStorage.removeItem('logado'); alert('saiu')}

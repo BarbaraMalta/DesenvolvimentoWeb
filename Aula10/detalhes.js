@@ -43,18 +43,10 @@ const montaCard = (atleta) => {
 
 if (sessionStorage.getItem('logado')) {
     pega_json('https://botafogo-atletas.mange.li/2024-1/').then(
-        (obj) => {
-            const nome = document.createElement("hi");
-            nome.innerHTML = obj.nome;
 
-            document.body.appendChild(nome);
-            const imagem = document.createElement("img")
-            imagem.src = obj.imagem;
-            imagem.alt = `foto de ${obj.nome}`
-
-            document.body.appendChild(imagem);
-            
-        }
+        (atleta) => montaCard(atleta)
     )
     
+} else {
+    document.body.innerHTML = `<h1>Você precisa estar logado</h1>`
 }
